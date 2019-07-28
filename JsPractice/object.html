@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function change() {
+            Person.status = "Software Engineer";
+            document.write(Person.status)
+        }
+        Person = {
+            name: "Imran",
+            age: "26",
+            status: "Engineer"
+        };
+        document.write(Person.name);
+        Person.age = 27;
+        document.write(Person.age);
+        document.write(Person.status);
+    </script>
+    <button onclick="change()">click hare</button>
+</body>
+
+</html>

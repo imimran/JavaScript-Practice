@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="pra"></p>
+    <p id="pra2"></p>
+    <p id="p3"> Click Hare</p>
+    <p onclick="this.innerHTML = 'You click hare' "> Click Hare</p>
+
+    <button id="newButton"> Click Hare</button>
+
+    <script type="text/javascript">
+        document.getElementById("pra").innerHTML = "This is paragraph";
+        document.getElementsByTagName("P")[1].innerHTML = "This is 2nd paragraph";
+        document.getElementById("p3").style.color = "blue";
+
+        function displayAlert() {
+            alert("Button Clicked");
+        }
+
+        document.getElementById("newButton").addEventListener("click", displayAlert);
+    </script>
+</body>
+
+</html>
